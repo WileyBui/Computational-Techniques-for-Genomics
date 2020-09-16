@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import sys
 import os
@@ -44,4 +44,4 @@ if __name__ == "__main__":
         else:
             print("Error: Could not find the `{file}` input file.".format(file=arguments[1]))
     else:
-        print("Command error, use: <python file name> <input file> <output file>")
+        print("Command error, use: count_codons <input file> <output file>")
