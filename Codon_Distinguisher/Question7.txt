@@ -1,0 +1,11 @@
+Wiley Bui | buixx206@umn.edu | 5368469
+
+Question 7: 
+
+The largest discrepancy in amino acid counts between the coding sequences (correct frame shift)
+and the whole genome sequence (random frame shift) is Stp ("Stop codon"), with the largest
+difference of 762. The correct frame shift only has 12 Stp whereas the random frame shift has
+774. The reason why we have 12 Stp for the correct frame shift is that we only have 12 separate
+genes; each gene has a stopping codon, and we also ignored the last extra remainder 1 or 2
+letters from the gene, whereas the whole genome sequence includes those remainders in,
+shifting and messing up the frame with a total of 762 stopping codons.
