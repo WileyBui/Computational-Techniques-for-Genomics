@@ -21,7 +21,7 @@
             Given genome
 ├── SARS-CoV-2_whole_genome_actual_answer.csv
             Frequency of codons from SARS-CoV-2_whole_genome.fna (Question #2, #4)
-├── count_codons.py
+├── count_codons
             Python file to count the frequencies of codons
 ├── test_genome.fna
             Made-up genome (Question #3)
@@ -30,3 +30,8 @@
 └── test_genome_expected_answer.csv
             Expected frequency of codons from test_genome.fna
 ```
+
+## How to run count_codons
+
+```count_codons <input_file> <output_file>```, such as
+```count_codons SARS-CoV-2_whole_genome.fna output.csv```
