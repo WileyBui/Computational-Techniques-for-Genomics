@@ -1,7 +1,7 @@
+#!/usr/bin/env python3
 import sys
 import os
 import numpy
-import plt
 
 class NW:
   
@@ -23,33 +23,33 @@ class NW:
     # self.print_matrix()
     self.backtrack_matrix()
     
-  def print_matrix(self):
-    '''
-      This is only for testing purposes for the small sequence.
-      Prints out the entire matrix.
-      Also shows the first sequence on the first column & second sequence on the first row.
+  # def print_matrix(self):
+  #   '''
+  #     This is only for testing purposes for the small sequence.
+  #     Prints out the entire matrix.
+  #     Also shows the first sequence on the first column & second sequence on the first row.
       
-      @param  Nothing
-      @return Nothing
-    '''
+  #     @param  Nothing
+  #     @return Nothing
+  #   '''
     
-    # prints out horizontal sequence
-    print("\t\t", end="")
-    for i in range(0, self.query_length):
-      print("{}".format(self.query[i]), end="\t")
-    print()
+  #   # prints out horizontal sequence
+  #   print("\t\t", end="")
+  #   for i in range(0, self.query_length):
+  #     print("{}".format(self.query[i]), end="\t")
+  #   print()
     
-    for i in range(0, self.ref_length + 1):
-      # prints out vertical sequence
-      if (i == 0):
-        print(end="\t")
-      else:
-        print(self.ref[i-1], end="\t")
+  #   for i in range(0, self.ref_length + 1):
+  #     # prints out vertical sequence
+  #     if (i == 0):
+  #       print(end="\t")
+  #     else:
+  #       print(self.ref[i-1], end="\t")
       
-      # prints out the entire matrix
-      for j in range(0, self.query_length + 1):
-        print("{}".format(self.matrix[i][j]), end="\t")
-      print()
+  #     # prints out the entire matrix
+  #     for j in range(0, self.query_length + 1):
+  #       print("{}".format(self.matrix[i][j]), end="\t")
+  #     print()
     
 
   def initialize_matrix(self):
@@ -226,8 +226,7 @@ def permute(query, ref, repeated_times):
     permuted_ref   = ''.join(numpy.random.permutation(list(ref)))
     nw = NW(permuted_query, permuted_ref, is_print_all_info=False)
     scores.append(nw.score)
-    print(nw.score)
-  print("Total score: ", scores)
+  print("PERMUTE SCORES: ", scores)
   
   return scores
   
@@ -239,8 +238,10 @@ def main(arguments):
         query  = open(arguments[1], "r").readlines()[1].replace("\n", '')
         ref    = open(arguments[2], "r").readlines()[1].replace("\n", '')
         if (len(arguments) == 3):
-          # nw = NW(query, ref)
-          permute(query, ref, 3)
+          nw = NW(query, ref)
+          
+          print("PERMUTING THE NUCLEOTIDES AND REPEATING THE ALIGNMENT 100 TIMES...")
+          permute(query, ref, 100)
         else:
           if (os.path.exists(arguments[3])):
             anw = anchored_nw(query, ref, arguments[3])
