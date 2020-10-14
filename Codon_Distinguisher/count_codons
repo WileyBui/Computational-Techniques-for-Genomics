@@ -3,8 +3,9 @@
 import sys
 import os
 
-""" Returns a dictionary with codon as key and its frequency as value """
 def get_codon_dictionary(codon_dictionary, string):
+    """ Returns a dictionary with codon as key and its frequency as value """
+    
     # iterates on every 3th item; remove remainders by: len(string) - len(string) % 3
     for i in range(0, len(string) - len(string) % 3, 3):
         codon = "{first}{second}{third}".format(first=string[i], second=string[i+1], third=string[i+2])
