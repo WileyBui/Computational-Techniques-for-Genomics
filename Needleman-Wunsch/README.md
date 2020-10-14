@@ -32,7 +32,7 @@
         Provided Cov2 Protein (S)
 ```
 
-## How to run count_codons
+## How to run Needleman-Wunsch
 
 - ```python3 Needleman-Wunsch.py <input_CoV_query_file> <input_CoV_ref_file>```
 - ```python3 Needleman-Wunsch.py <input_CoV_query_file> <input_CoV_ref_file> <match_file_for_anchored_version>```
