@@ -2,10 +2,6 @@
 
 ## Wiley Bui | buixx206@umn.edu | 5368469
 
-## How to Run Variable Genomic Regions
-```python3 variable_genomic_regions.py <INPUT_FILE>```, such as
-**```python3 variable_genomic_regions.py Homework4-seqs-with-primers.fna```**
-
 ## Files
 ```
 ├── Homework4-seqs-with-primers.fna
@@ -25,3 +21,7 @@
 ## Python Dependencies
 - numpy
 - matplotlib.pyplot
+
+## How to Run Variable Genomic Regions
+```python3 variable_genomic_regions.py <INPUT_FILE>```, such as
+**```python3 variable_genomic_regions.py Homework4-seqs-with-primers.fna```**
