@@ -1,6 +1,6 @@
 # Finding Variable Genomic Regions
 
-## Wiley Bui | buixx206@umn.edu | 5368469
+## Wiley Bui
 
 ## Files
 ```

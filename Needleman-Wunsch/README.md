@@ -1,6 +1,6 @@
-# Homework 2 - Needleman-Wunsch
+# Needleman-Wunsch
 
-## Wiley Bui | buixx206@umn.edu | 5368469
+## Wiley Bui
 
 ## Files
 

@@ -1,6 +1,6 @@
-# Homework 1 - Genomic Data
+# Genomic Data
 
-## Wiley Bui | buixx206@umn.edu | 5368469
+## Wiley Bui
 
 ## Files
 
