@@ -1,5 +1,3 @@
-Wiley Bui | buixx206@umn.edu | 5368469
-
 Question 7: 
 
 The largest discrepancy in amino acid counts between the coding sequences (correct frame shift)
