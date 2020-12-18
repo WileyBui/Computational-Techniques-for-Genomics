@@ -1,5 +1,13 @@
 # Genomic Data
 
+## How to run count_codons
+
+```bat
+$ python count_codons.py data/SARS-CoV-2_whole_genome.fna data_outputs/whole_genome_output.csv
+$ python count_codons.py data/SARS-CoV-2_separate_genes.fna data_outputs/separate_genes_output.csv
+```
+
+
 ## Files
 
 ```
@@ -32,11 +40,4 @@
     |       Actual frequency of codons from test_genome.fna (Question #3)
     └── test_genome_expected_answer.csv
             Expected frequency of codons from test_genome.fna
-```
-
-## How to run count_codons
-
-```bat
-$ python count_codons.py data/SARS-CoV-2_whole_genome.fna data_outputs/whole_genome_output.csv
-$ python count_codons.py data/SARS-CoV-2_separate_genes.fna data_outputs/separate_genes_output.csv
 ```
